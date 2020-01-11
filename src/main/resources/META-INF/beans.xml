@@ -11,19 +11,11 @@
         <constructor-arg value="HAHAHAHAHAHAHAHA"/>
     </bean>
 
-    <bean name="pawel" class="pl.altkom.ioc.Message">
-        <property name="to" value="Paweł"/>
-        <property name="text" ref="a"/>
+    <bean name="b" class="java.lang.String">
+        <constructor-arg value="HEHEHEHEHEHEHE"/>
     </bean>
 
-    <bean name="adam" class="pl.altkom.ioc.Message">
-        <constructor-arg name="to" value="Adam"/>
-        <constructor-arg name="text" value="Pan Tadeusz"/>
-    </bean>
+    <context:component-scan base-package="pl.altkom.ioc"/>
 
-    <bean name="mail01" class="pl.altkom.ioc.Mail">
-        <property name="price" value="3.0"/>
-        <property name="message" ref="pawel"/>
-    </bean>
 
 </beans>

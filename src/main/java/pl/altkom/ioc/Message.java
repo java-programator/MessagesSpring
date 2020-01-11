@@ -1,7 +1,16 @@
 package pl.altkom.ioc;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Message {
+    @Autowired
+    @Qualifier("a")
     private String to;
+    @Autowired
+    @Qualifier("b")
     private String text;
 
     public Message() {

@@ -1,6 +1,11 @@
 package pl.altkom.ioc;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Mail {
+    @Autowired
     private Message message;
     private double price;
 
